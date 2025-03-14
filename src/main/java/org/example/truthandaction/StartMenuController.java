@@ -8,7 +8,12 @@ public class StartMenuController {
     private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void initialize() {
+        welcomeText.setText("Добро пожаловать в игру 'Правда или Действие!'");
+    }
+
+    @FXML
+    protected void WelcomeButton() {
+
     }
 }
