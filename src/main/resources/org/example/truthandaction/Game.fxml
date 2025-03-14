@@ -11,4 +11,7 @@
             fx:controller="org.example.truthandaction.Game"
             prefHeight="400.0" prefWidth="600.0">
 
+    <Button text="Правда" onAction="#showTruthButton"/>
+    <Button text="Действие" onAction="#showActionButton"/>
+
 </VBox>
