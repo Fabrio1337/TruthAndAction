@@ -1,18 +1,17 @@
 package org.example.truthandaction.texts;
 
+import org.springframework.stereotype.Component;
+
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
 
-public class Truth {
+@Component
+public class TruthText {
     private ArrayList<String> truths = new ArrayList<>();
 
-    public Truth() {
+    public TruthText() {
         loadTextFromFile();
     }
 
@@ -29,6 +28,10 @@ public class Truth {
         catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public String getTruth(String word) {
+        return word;
     }
 
     public ArrayList<String> getTruths() {

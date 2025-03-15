@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
-class TruthTest {
+class TruthTextTest {
 
     @Test
     public void afterAddingTextTruthListSizeBecome150()
     {
-        Truth truth = new Truth();
+        TruthText truthText = new TruthText();
 
-        ArrayList<String> truths = truth.getTruths();
+        ArrayList<String> truths = truthText.getTruths();
 
         assertEquals(160, truths.size());
 
