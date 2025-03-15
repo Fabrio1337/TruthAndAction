@@ -1,0 +1,18 @@
+package org.example.truthandaction;
+
+import org.example.truthandaction.texts.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("org.example.truthandaction.texts")
+public class AllBeans {
+    @Bean
+    public Action action()
+    { return new Action();}
+
+    @Bean
+    public Truth truth()
+    { return new Truth();}
+}
