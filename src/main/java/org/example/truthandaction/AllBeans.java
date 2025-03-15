@@ -6,8 +6,13 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("org.example.truthandaction.texts")
+@ComponentScan(basePackages = {"org.example.truthandaction.texts", "org.example.truthandaction"})
 public class AllBeans {
+
+    @Bean
+    public GameFXML gameFXML()
+    {return new GameFXML();}
+
     @Bean
     public Action action()
     { return new Action();}

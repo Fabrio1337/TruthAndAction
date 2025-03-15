@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Game {
 
     @FXML
@@ -13,12 +12,17 @@ public class Game {
     @FXML
     protected void showTruthButton()
     {
-
+        setRandomText(".");
     }
 
     @FXML
     protected void showActionButton()
     {
+        setRandomText(".");
+    }
 
+    public void setRandomText(String text)
+    {
+       textLabel.setText(text);
     }
 }
